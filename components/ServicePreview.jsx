@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /*
   This example requires some changes to your config:
   
@@ -15,7 +17,7 @@
 const categories = [
   {
     name: "Facials",
-    href: "#",
+    href: "/services",
     imageSrc:
       "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     imageAlt: "Person getting waxed",
@@ -24,7 +26,7 @@ const categories = [
   },
   {
     name: "Massages",
-    href: "#",
+    href: "/services",
     imageSrc:
       "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
     imageAlt:
@@ -34,7 +36,7 @@ const categories = [
   },
   {
     name: "Laser Hair Removal",
-    href: "#",
+    href: "/services",
     imageSrc:
       "https://plus.unsplash.com/premium_photo-1661505071420-1f10ce4108e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
     imageAlt: "Person getting botox injections",
@@ -57,7 +59,11 @@ export default function ServicePreview() {
 
         <div className="mt-10 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-8 lg:space-y-0">
           {categories.map((category) => (
-            <a key={category.name} href={category.href} className="group block">
+            <Link
+              key={category.name}
+              href={category.href}
+              className="group block"
+            >
               <div
                 aria-hidden="true"
                 className="aspect-w-3 aspect-h-2 overflow-hidden rounded-lg group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6"
@@ -74,7 +80,7 @@ export default function ServicePreview() {
               <p className="mt-2 text-sm text-gray-500">
                 {category.description}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

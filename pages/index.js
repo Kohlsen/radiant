@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
+import Reviews from "../components/Reviews";
 import ServicePreview from "../components/ServicePreview";
 import Slider from "../components/Slider";
 import StickyHeader from "../components/StickyHeader";
@@ -20,6 +21,7 @@ export default function Home() {
       {/* <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-b0a1f521-3382-4fc1-b03d-cf10975e8cad"></div> */}
       <ServicePreview />
+      <Reviews />
     </div>
   );
 }
