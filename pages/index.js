@@ -1,4 +1,5 @@
 import Head from "next/head";
+import CtaSection from "../components/CtaSection";
 import Hero from "../components/Hero";
 import Reviews from "../components/Reviews";
 import ServicePreview from "../components/ServicePreview";
@@ -21,6 +22,7 @@ export default function Home() {
       {/* <script src="https://apps.elfsight.com/p/platform.js" defer></script>
       <div class="elfsight-app-b0a1f521-3382-4fc1-b03d-cf10975e8cad"></div> */}
       <ServicePreview />
+      <CtaSection />
       <Reviews />
     </div>
   );

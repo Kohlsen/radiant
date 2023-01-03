@@ -72,9 +72,9 @@ const people = [
 export default function TeamList() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-7xl py-24 px-4 sm:px-6 lg:px-8 lg:py-24">
         <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-          <div className="space-y-5 sm:space-y-4">
+          <div className="space-y-5">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Our Team
             </h2>

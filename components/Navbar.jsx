@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
+import ServiceFlyout from "./ServiceFlyout";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -47,7 +48,7 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
+      className="fixed left-0 top-0 w-full z-20 ease-in duration-300"
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
@@ -61,37 +62,34 @@ const Navbar = () => {
           />
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className={router.pathname === "/" ? "text-red-400 p-4" : "p-4"}>
+          <li className={router.pathname === "/" ? "text-red-300 p-4" : "p-4"}>
             <Link href="/">Home</Link>
           </li>
           <li
             className={
-              router.pathname === "/about" ? "text-red-400 p-4" : "p-4"
+              router.pathname === "/about" ? "text-red-300 p-4" : "p-4"
             }
           >
             <Link href="/about">About</Link>
           </li>
           <li
             className={
-              router.pathname === "/services" ? "text-red-400 p-4" : "p-4"
+              router.pathname === "/services" ? "text-red-300 p-4" : "p-4"
             }
           >
-            <Link href="/services">Services</Link>
+            <ServiceFlyout textColor={textColor} />
           </li>
           <li
-            className={router.pathname === "/team" ? "text-red-400 p-4" : "p-4"}
+            className={
+              router.pathname === "/contact" ? "text-red-300 p-4" : "p-4"
+            }
           >
-            <Link href="/team">Team</Link>
-          </li>
-          <li
-            className={router.pathname === "/book" ? "text-red-400 p-4" : "p-4"}
-          >
-            <Link href="/contact">Book</Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
 
         {/* Mobile Button */}
-        <div className="block sm:hidden z-10" onClick={handleNav}>
+        <div className="block sm:hidden z-20" onClick={handleNav}>
           {nav ? (
             <AiOutlineClose size={20} style={{ color: "#fff" }} />
           ) : (
@@ -111,16 +109,13 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl hover:text-red-400">
-              <Link href="/about">About</Link>
+              <Link href="/about">About Us</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl hover:text-red-400">
               <Link href="/services">Services</Link>
             </li>
             <li onClick={handleNav} className="p-4 text-4xl hover:text-red-400">
-              <Link href="/team">Team</Link>
-            </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-red-400">
-              <Link href="/contact">Book</Link>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>

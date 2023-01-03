@@ -135,7 +135,9 @@ export default function Reviews() {
             </p>
 
             <a
-              href="#"
+              href="https://www.google.com/search?q=radiantskinandbeauty&oq=radiantskinandbeauty&aqs=chrome.0.69i59j46i13i175i199i512j0i390l2j69i60l4.4240j1j1&sourceid=chrome&ie=UTF-8#lrd=0x87c0c2128067582b:0xa51435878d45be2e,1,,,"
+              target="_blank"
+              rel="noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center rounded-md border border-gray-300 bg-white py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-50 sm:w-auto lg:w-full"
             >
               Write a review
