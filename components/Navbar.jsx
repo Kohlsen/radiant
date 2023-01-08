@@ -58,30 +58,30 @@ const Navbar = () => {
           <img
             src="https://radiantskinandbeauty.com/wp-content/uploads/2015/01/logo.png"
             alt="Radiant Skin & Beauty"
-            className="w-16 z-30 object-cover rounded-full"
+            className="w-16 z-20 object-cover rounded-full"
           />
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
-          <li className={router.pathname === "/" ? "text-red-300 p-4" : "p-4"}>
+          <li className={router.pathname === "/" ? "text-rose-300 p-4" : "p-4"}>
             <Link href="/">Home</Link>
           </li>
           <li
             className={
-              router.pathname === "/about" ? "text-red-300 p-4" : "p-4"
+              router.pathname === "/about" ? "text-rose-400 p-4" : "p-4"
             }
           >
             <Link href="/about">About</Link>
           </li>
           <li
             className={
-              router.pathname === "/services" ? "text-red-300 p-4" : "p-4"
+              router.pathname === "/services" ? "text-rose-400 p-4" : "p-4"
             }
           >
-            <ServiceFlyout textColor={textColor} />
+            <Link href="/services">Services</Link>
           </li>
           <li
             className={
-              router.pathname === "/contact" ? "text-red-300 p-4" : "p-4"
+              router.pathname === "/contact" ? "text-rose-400 p-4" : "p-4"
             }
           >
             <Link href="/contact">Contact</Link>
@@ -105,16 +105,28 @@ const Navbar = () => {
           }
         >
           <ul>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-red-400">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl hover:text-rose-400"
+            >
               <Link href="/">Home</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-red-400">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl hover:text-rose-400"
+            >
               <Link href="/about">About Us</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-red-400">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl hover:text-rose-400"
+            >
               <Link href="/services">Services</Link>
             </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-red-400">
+            <li
+              onClick={handleNav}
+              className="p-4 text-4xl hover:text-rose-400"
+            >
               <Link href="/contact">Contact</Link>
             </li>
           </ul>

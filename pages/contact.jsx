@@ -216,7 +216,7 @@ export default function contact() {
 
               <div className="grid grid-cols-1 lg:grid-cols-3">
                 {/* Contact information */}
-                <div className="relative overflow-hidden bg-gradient-to-b from-red-300 to-red-300 py-10 px-6 sm:px-10 xl:p-12">
+                <div className="relative overflow-hidden bg-gradient-to-b from-rose-300 to-rose-300 py-10 px-6 sm:px-10 xl:p-12">
                   {/* Decorative angle backgrounds */}
                   <div
                     className="pointer-events-none absolute inset-0 sm:hidden"
@@ -529,7 +529,7 @@ export default function contact() {
                     <div className="sm:col-span-2 sm:flex sm:justify-end">
                       <button
                         type="submit"
-                        className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-red-300 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:w-auto"
+                        className="mt-2 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-rose-300 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:w-auto"
                       >
                         Submit
                       </button>

@@ -19,7 +19,7 @@ export default function CtaSection() {
         className="absolute inset-x-0 top-0 hidden h-1/2 bg-gray-50 lg:block"
         aria-hidden="true"
       />
-      <div className="mx-auto max-w-7xl bg-red-300/60 lg:bg-transparent lg:px-8">
+      <div className="mx-auto max-w-7xl bg-rose-300/60 lg:bg-transparent lg:px-8">
         <div className="lg:grid lg:grid-cols-12">
           <div className="relative z-10 lg:col-span-4 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-16">
             <div
@@ -37,7 +37,7 @@ export default function CtaSection() {
             </div>
           </div>
 
-          <div className="relative bg-red-300/60 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
+          <div className="relative bg-rose-300/60 lg:col-span-10 lg:col-start-3 lg:row-start-1 lg:grid lg:grid-cols-10 lg:items-center lg:rounded-3xl">
             <div
               className="absolute inset-0 hidden overflow-hidden rounded-3xl lg:block"
               aria-hidden="true"
@@ -64,7 +64,7 @@ export default function CtaSection() {
                       y={0}
                       width={4}
                       height={4}
-                      className="text-red-300"
+                      className="text-rose-300"
                       fill="currentColor"
                     />
                   </pattern>
@@ -122,7 +122,7 @@ export default function CtaSection() {
                 sed lacus, fames.
               </p>
               <a
-                className="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-red-300/60 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto"
+                className="block w-full rounded-md border border-transparent bg-white py-3 px-5 text-center text-base font-medium text-rose-300/60 shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto"
                 href="#"
               >
                 Explore open positions

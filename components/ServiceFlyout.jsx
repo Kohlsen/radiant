@@ -60,7 +60,7 @@ export default function ServiceFlyout(props) {
               }`,
             }}
             className={
-              "group inline-flex items-center rounded-md bg-transparen focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-red-400"
+              "group inline-flex items-center rounded-md bg-transparen focus:outline-none focus:ring-2 focus:ring-rose-300 focus:ring-offset-2 focus:ring-offset-rose-300"
             }
           >
             <span>Services</span>

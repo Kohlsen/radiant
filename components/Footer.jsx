@@ -75,7 +75,7 @@ const navigation = {
 export default function Footer() {
   let date = new Date().getFullYear();
   return (
-    <footer className="bg-red-300/60 border-t border-t-slate-200">
+    <footer className="bg-rose-300/60 border-t border-t-slate-200">
       <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
         <nav
           className="-mx-5 -my-2 flex flex-wrap justify-center"

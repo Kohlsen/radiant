@@ -78,7 +78,7 @@ export default function TeamList() {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Our Team
             </h2>
-            <p className="text-xl text-gray-500">
+            <p className="text-small text-gray-500">
               “Radiant skin” is our philosophy. We want it and we know you want
               it. We’re on a mission to find beautiful skin through thoughtful
               consultation and real goal-setting. We can help you achieve
@@ -106,7 +106,7 @@ export default function TeamList() {
                       <h3>{person.name}</h3>
                       <p className="text-red-400">{person.role}</p>
                     </div>
-                    <div className="text-lg">
+                    <div className="text-small">
                       <p className="text-gray-500">{person.bio}</p>
                     </div>
 
