@@ -1,5 +1,4 @@
 import React from "react";
-// import "tw-elements";
 
 function Accordian() {
   return (

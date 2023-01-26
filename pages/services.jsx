@@ -1,7 +1,12 @@
 import React from "react";
 import Accordian from "../components/Accordian";
+import { useRouter } from "next/router";
+function Services() {
+  const router = useRouter();
+  const goToContact = () => {
+    router.push("/contact");
+  };
 
-function services() {
   return (
     <div>
       <div className="h-[400px] mb-4">
@@ -12,14 +17,22 @@ function services() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between mt-10 px-12 mb-10">
+      <div className="flex flex-col md:flex-row justify-between mt-10 px-12 mb-10">
         <div className="">
           <h2 className="text-bold text-5xl">Our Services</h2>
-          <button className="mt-10 px-[4rem] bg-rose-300 text-white hover:bg-red-400 rounded py-[0.9rem]">
+          <button
+            className="mt-10 px-[4rem] mb-10 bg-rose-300 text-white hover:bg-red-400 rounded py-[0.9rem]"
+            onClick={() => {
+              goToContact();
+            }}
+            onTouchEnd={() => {
+              goToContact();
+            }}
+          >
             Book
           </button>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <Accordian />
         </div>
       </div>
@@ -27,4 +40,4 @@ function services() {
   );
 }
 
-export default services;
+export default Services;
