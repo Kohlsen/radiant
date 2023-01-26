@@ -284,12 +284,12 @@ function Accordian() {
               </li>
               <li className="py-2">
                 OXYGENATION - Reaction which utilizes natural physiological
-                processes is created, attracting a surge of oxygen to the skin's
-                surface.
+                processes is created, attracting a surge of oxygen to the
+                skin&apos;s surface.
               </li>
               <li className="py-2">
                 EXFOLIATION - Gently removes dead skin cells to renew and and
-                refresh skin’s texture, making the skin look brighter and
+                refresh skin&apos;s texture, making the skin look brighter and
                 improving the effectiveness of active ingredients absorption.
               </li>
               <li className="py-2">
