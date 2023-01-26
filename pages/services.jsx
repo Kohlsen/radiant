@@ -11,7 +11,7 @@ function Services() {
     <div>
       <div className="h-[400px] mb-4">
         {/* image header */}
-        <div className="flex items-center justify-center bg-fixed h-full bg-center bg-cover service-img">
+        <div className="flex items-center justify-center bg-scroll h-full bg-center bg-cover service-img">
           <div className="p-6">
             <h2 className="text-5xl font-normal text-white">Our Services</h2>
           </div>
